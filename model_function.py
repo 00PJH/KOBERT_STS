@@ -27,5 +27,6 @@ def predict_label(text, model, tokenizer):
 
 def classify_article(title, model, tokenizer):
     label = predict_label(title, model, tokenizer)
-    return "국방 관련 기사입니다." if label == 1 else "국방 관련 기사가 아닙니다."
+    # return "국방 관련 기사입니다." if label == 1 else "국방 관련 기사가 아닙니다."
+    return label
 
