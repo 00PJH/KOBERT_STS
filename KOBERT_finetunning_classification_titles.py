@@ -106,8 +106,8 @@ eval_results = trainer.evaluate()
 print(f"Evaluation results: {eval_results}")
 
 # 최적화된 모델 저장
-model.save_pretrained('./STS_titles_KLUE_BERT_model-2')
-tokenizer.save_pretrained('./STS_titles_KLUE_BERT_model-2')
+model.save_pretrained('./STS_news_titles_KLUE_BERT_model')
+tokenizer.save_pretrained('./STS_news_titles_KLUE_BERT_model')
 
 # Evaluation results: {'eval_loss': 0.11853419989347458,
 #                       'eval_accuracy': 0.980634528224145,
