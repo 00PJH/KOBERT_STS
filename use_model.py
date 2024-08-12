@@ -8,7 +8,7 @@ model_name = './STS_news_titles_KLUE_BERT_model'
 # 모델과 토크나이저 로드
 tokenizer = BertTokenizer.from_pretrained(model_name)
 model = BertForSequenceClassification.from_pretrained(model_name)
-model.eval()
+
 
 df = pd.read_csv('NewsResult_20240812-20240812_only_titles.csv')
 # 무작위로 샘플을 추출
